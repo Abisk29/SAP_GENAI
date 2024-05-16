@@ -1,38 +1,172 @@
-.App {
+/* Container */
+.container {
+  font-family: Arial, sans-serif;
   text-align: center;
+  max-width: auto;
+  margin: 0 auto;
+  background-color: #ced6f7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #193340;
+  color: white;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header .logo {
+  font-size: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header .menu {
+  font-size: 1.5rem;
+}
+
+/* Title */
+.title {
+  margin: 40px 0;
+  font-size: 2rem;
+  color: #000;
+}
+
+/* Input Section */
+.input-section {
+  margin: 20px 0;
+}
+
+.upload-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+.text-box {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box input {
+  width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.text-box .microphone {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+/* Output Section */
+.output-title {
+  margin: 40px 0 20px;
+  font-size: 1.75rem;
+  color: #000;
+}
+
+.expense-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.expense-card {
+  width: 250px;
+  padding: 20px;
+  border: 2px solid #03A9F4;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.expense-card .category-icon {
+  font-size: 2rem;
+}
+
+.expense-card .category-name {
+  margin: 10px 0;
+  font-size: 1.25rem;
+  color: #000;
+}
+
+.expense-card .amount {
+  font-size: 1.5rem;
+  color: #03A9F4;
+}
+
+.expense-card .details-link {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #03A9F4;
+  cursor: pointer;
+}
+
+/* Footer */
+
+
+.image-uploader {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.image-uploader input {
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image-uploader img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.ImageUploaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+  
+.ImageUploaderInput {
+  margin-bottom: 1rem;
+}
+
+/* app.css */
+
+.ImageUploaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.ImageUploaderInput {
+  margin-bottom: 1rem;
+}
+
+.ImageUploaderPreview {
+  position: relative;
+}
+
+.DeleteButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
